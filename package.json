@@ -9,8 +9,8 @@
     "dev": "ts-node-dev src/index.ts",
     "typeorm": "typeorm-ts-node-commonjs",
     "m:create": "typeorm migration:create",
-    "m:run": "npx typeorm-ts-node-commonjs migration:run -d src/dataSource/connection.ts",
-    "m:revert": "npx typeorm-ts-node-commonjs migration:revert -d src/dataSource/connection.ts"
+    "m:run": "npx typeorm-ts-node-commonjs migration:run -d src/dataSource/database.ts",
+    "m:revert": "npx typeorm-ts-node-commonjs migration:revert -d src/dataSource/database.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
@@ -23,6 +23,7 @@
     "express": "^4.18.2",
     "pg": "^8.10.0",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.12"
+    "typeorm": "0.3.7",
+    "uuid": "^9.0.0"
   }
 }
