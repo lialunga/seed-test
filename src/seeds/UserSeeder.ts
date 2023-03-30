@@ -13,7 +13,11 @@ export class UserSeeder implements Seeder {
             password: await hash("teste", 10)
         }
 
-        const newUser = userRepository.create(userData)
-        await userRepository.save(newUser);
+        const userAlreadExist = await userRepository.findBy({ email: userData.email });
+
+        if(!userAlreadExist){
+            const newUser = userRepository.create(userData)
+            await userRepository.save(newUser);
+        }
     }
 }
