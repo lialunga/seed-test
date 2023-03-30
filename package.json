@@ -10,7 +10,8 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "m:create": "typeorm migration:create",
     "m:run": "npx typeorm-ts-node-commonjs migration:run -d src/dataSource/database.ts",
-    "m:revert": "npx typeorm-ts-node-commonjs migration:revert -d src/dataSource/database.ts"
+    "m:revert": "npx typeorm-ts-node-commonjs migration:revert -d src/dataSource/database.ts",
+    "seed": "ts-node ./node_modules/typeorm-extension/dist/cli/index.js seed -d src/dataSource/database.ts"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -26,6 +27,7 @@
     "express": "^4.18.2",
     "pg": "^8.10.0",
     "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.9.1",
     "typeorm": "0.3.7",
     "typeorm-extension": "^2.6.2",
     "uuid": "^9.0.0"

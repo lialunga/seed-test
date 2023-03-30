@@ -18,12 +18,12 @@ export class user1680021411444 implements MigrationInterface {
                     },
                     {
                         name: "email",
-                        type: "varchar(50)",
+                        type: "varchar(100)",
                         isUnique: true,
                     },
                     {
                         name: "password",
-                        type: "varchar(50)"
+                        type: "varchar(100)"
                     }
                 ]
             })

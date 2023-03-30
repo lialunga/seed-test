@@ -1,5 +1,5 @@
 import { hash } from "bcrypt";
-import { User } from "src/models/User";
+import { User } from "../models/User";
 import { DataSource } from "typeorm";
 import { Seeder, SeederFactoryManager } from "typeorm-extension"
 
