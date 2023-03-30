@@ -1,2 +1,8 @@
 # seed-test
-Implementando uma seed com typeorm.
+## Implementa uma seed com typeorm
+
+###Tecnologias usadas:
+*NodeJs
+*Typescript
+*TypeORM
+*PostgreSQL
